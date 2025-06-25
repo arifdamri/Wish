@@ -59,7 +59,7 @@ button {
 .butterfly {
   width: 50px;
   height: 50px;
-  background: url('https://i.ibb.co/pXnW7RQ/butterfly.gif') no-repeat center/contain;
+  background: url('https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif') no-repeat center/contain;
   position: absolute;
   top: 100px;
   left: -60px;
@@ -76,7 +76,7 @@ button {
 .bird {
   width: 60px;
   height: 60px;
-  background: url('https://i.ibb.co/z7DF3ff/bird.gif') no-repeat center/contain;
+  background: url('https://media.giphy.com/media/l0MYwONBGDS7aPGOk/giphy.gif') no-repeat center/contain;
   position: absolute;
   top: 50px;
   left: 100%;
@@ -96,10 +96,12 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
-  border-radius: 12px;
+  border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  max-width: 300px;
   text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.4s ease-in-out;
   z-index: 100;
 }
 
@@ -116,4 +118,16 @@ button {
 
 .popup button {
   background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
